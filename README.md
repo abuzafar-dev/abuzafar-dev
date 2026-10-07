@@ -60,4 +60,9 @@ Each repository's README explains what it does and shows it running.
 
 ### Contact
 
-Tashkent, Uzbekistan · abuzafareshboboyev1@gmail.com
+Tashkent, Uzbekistan
+
+- **Email** — abuzafareshboboyev1@gmail.com
+- **Telegram** — [@Abuzafar_006](https://t.me/Abuzafar_006)
+- **LinkedIn** — [abuzafar-eshboboyev](https://www.linkedin.com/in/abuzafar-eshboboyev-abb5433b9/)
+- **LeetCode** — [Abuzafar](https://leetcode.com/u/Abuzafar/)
