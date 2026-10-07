@@ -18,12 +18,6 @@ JSON-only API, a separate Vue 3 PWA frontend, PostgreSQL, Docker Compose, CI.
 
 **8,400 lines of Python · 236 tests · 33 commits**
 
-[![Sale screen](https://raw.githubusercontent.com/abuzafar-dev/my-market/main/docs/screenshots/02-sotuv.png)](https://github.com/abuzafar-dev/my-market)
-
-<sub>The sale screen: search or scan, a cart that survives a reload, cash /
-card / credit, change calculation, `Ctrl+Enter` to finish. Stock badges turn
-amber and red as a product runs low.</sub>
-
 What is worth looking at in it:
 
 - **Stock is never a stored column.** It is summed live from FIFO batches, so
@@ -41,9 +35,7 @@ What is worth looking at in it:
 - **Auth and abuse handling:** JWT with rotating, blacklisted refresh tokens in
   an httpOnly cookie, a login-lockout authentication backend, per-scope
   throttling, and owner/seller role permissions.
-- **Reports** for any day, week or month, with Excel and CSV export:
-
-  [![Reports](https://raw.githubusercontent.com/abuzafar-dev/my-market/main/docs/screenshots/06-hisobot.png)](https://github.com/abuzafar-dev/my-market)
+- **Reports** for any day, week or month, with Excel and CSV export.
 - **Operations:** split settings per environment, nothing secret in source,
   security headers and HSTS in production, a `/healthz/` check, and CI that runs
   ruff lint, format checking, a missing-migrations check and the suite.
@@ -72,12 +64,6 @@ properly and nothing more.
 server-rendered Django e-commerce and affiliate platform: customer storefront,
 seller cabinet with referral funnels and commissions, and an operator panel for
 processing orders. Broader in features than `my-market`, simpler in engineering.
-
-[![Operator panel](https://raw.githubusercontent.com/abuzafar-dev/Janona-Market/main/docs/screenshots/10-operator.png)](https://github.com/abuzafar-dev/Janona-Market)
-
-<sub>The operator panel: the queue of new orders, filtered by region, each one
-claimed by a single operator and moved through packing, delivery and
-completion.</sub>
 
 ---
 
