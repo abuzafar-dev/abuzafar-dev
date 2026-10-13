@@ -1,68 +1,52 @@
 ## Abuzafar Eshboboyev
 
-Backend developer — Python and Django. Based in Tashkent, Uzbekistan.
+**Python Backend Developer** · Django · Django REST Framework · PostgreSQL<br>
+Tashkent, Uzbekistan · Software Engineering student at TUIT
 
-I am a Software Engineering student at TUIT, and I have been learning backend
-development at PDP Academy alongside it. Most of what I actually know, though,
-came from building two systems end to end and running into the problems you
-only meet once something has real data in it.
+[![Email](https://img.shields.io/badge/Email-abuzafareshboboyev1%40gmail.com-555?style=flat-square&logo=gmail&logoColor=white)](mailto:abuzafareshboboyev1@gmail.com)
+[![Telegram](https://img.shields.io/badge/Telegram-%40Abuzafar__006-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/Abuzafar_006)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abuzafar_Eshboboyev-0A66C2?style=flat-square)](https://www.linkedin.com/in/abuzafar-eshboboyev-abb5433b9/)
 
-What I keep coming back to is the part of a system that has to stay correct
-when more than one person uses it at the same moment: a sale rung up twice
-because a request was retried, a receipt cancelled from two tills at once, a
-stock count that drifts because two requests read it before either one wrote.
-Getting those right taught me more than any feature did.
+I build REST APIs and the business logic behind them: inventory, sales, payments
+and reports for small shops. I care most about the parts that have to stay
+correct when several people use the system at once. That means retried requests,
+concurrent checkouts and per-tenant data isolation.
 
-I build for shops and small businesses here, which sets the constraints: it has
-to work on an inexpensive phone, over unreliable Wi-Fi, for someone who has
-never used a POS before.
+Looking for a **junior backend role** (Python / Django) or freelance backend work.
 
-I am looking for a junior backend position where I can work on real systems and
-learn from people who have run them in production.
+---
 
-### What I work with
+### Featured project
+
+#### [Mening Bozorim](https://github.com/abuzafar-dev/my-market) — POS, inventory and credit ledger for small shops
+
+A multi-tenant point-of-sale system that replaces the paper notebook in a small shop.
+
+- **Stock from FIFO batches:** stock is calculated from purchase batches, sold oldest first, with expiry tracking
+- **Idempotent checkout:** a retried sale returns the original receipt instead of charging twice
+- **Credit ledger:** customer debts and payments, plus day/week/month reports with Excel and CSV export
+- **JWT auth:** rotating refresh cookie, owner/seller roles, login lockout and rate limiting
+- **Phone-first PWA:** barcode scanning with the phone camera, Uzbek and Russian UI
+
+`Django 6` `DRF` `PostgreSQL` `JWT` `Vue 3` `Docker Compose` `GitHub Actions`
+236 automated tests, including 34 security tests, run in CI on every push.
+
+---
+
+### Tech I use
 
 | | |
 |---|---|
-| **Daily** | Python · Django · Django REST Framework · PostgreSQL |
-| **Comfortable** | Docker · Git · GitHub Actions · Linux · JWT auth · REST API design |
-| **Enough to be useful** | Vue 3 · Jinja2 · GraphQL · Django Channels · aiogram |
-| **Learning now** | Celery · Redis · deployment and monitoring in production |
+| **Backend** | Python · Django · Django REST Framework · PostgreSQL · JWT · OpenAPI |
+| **Tooling** | Docker · Docker Compose · GitHub Actions · Git · Linux · ruff |
+| **Also used** | Vue 3 · Django Channels · FastAPI · aiogram |
+| **Learning now** | Celery · Redis · production monitoring |
 
-I write tests for the parts that matter and I leave the reasoning in comments,
-because I have already been the one working out why past-me did something.
+### Other repositories
 
-### Things I have built
+Minimal starter templates I keep for new projects:
+[DRF + OpenAPI](https://github.com/abuzafar-dev/APITemplate) ·
+[Django Channels](https://github.com/abuzafar-dev/WebSocketTemplate) ·
+[aiogram bot](https://github.com/abuzafar-dev/TelegramBotTemplate)
 
-**[Mening Bozorim](https://github.com/abuzafar-dev/my-market)** · Sept 2026 — present
-A POS, inventory and credit-ledger system for small shops — it replaces the
-paper notebook. FIFO batch stock with expiry tracking, idempotent checkout that
-holds under concurrent tills, a customer credit ledger, and sales reports
-exported to Excel or CSV. Products are scanned with the phone camera, so the
-shop needs no extra hardware. Django, DRF, PostgreSQL, JWT, Vue 3, PWA, Docker,
-GitHub Actions CI. 236 tests, 34 of them covering per-shop data isolation,
-login lockout and rate limiting.
-
-**[Janona Market](https://github.com/abuzafar-dev/Janona-Market)** · Aug 2026
-A multi-role e-commerce and dropshipping platform: sellers publish referral
-landing pages, operators claim and fulfil orders from a shared queue, and a
-ledger settles seller payouts. Full-stack Django.
-
-**Starter templates** — small, deliberately minimal starting points I keep for
-new projects: [DRF + OpenAPI](https://github.com/abuzafar-dev/APITemplate),
-[the same Dockerized](https://github.com/abuzafar-dev/DockerAPITemplate),
-[GraphQL](https://github.com/abuzafar-dev/django-graphql-template),
-[Channels](https://github.com/abuzafar-dev/WebSocketTemplate),
-[Jinja2](https://github.com/abuzafar-dev/docker-django-jinja-template),
-[aiogram](https://github.com/abuzafar-dev/TelegramBotTemplate).
-
-Each repository's README explains what it does and shows it running.
-
-### Contact
-
-Tashkent, Uzbekistan
-
-- **Email** — abuzafareshboboyev1@gmail.com
-- **Telegram** — [@Abuzafar_006](https://t.me/Abuzafar_006)
-- **LinkedIn** — [abuzafar-eshboboyev](https://www.linkedin.com/in/abuzafar-eshboboyev-abb5433b9/)
-- **LeetCode** — [Abuzafar](https://leetcode.com/u/Abuzafar/)
+Problem solving: [LeetCode](https://leetcode.com/u/Abuzafar/)
