@@ -16,7 +16,7 @@ Looking for a **junior backend role** (Python / Django) or freelance backend wor
 
 ---
 
-### Featured project
+### Featured projects
 
 #### [Mening Bozorim](https://github.com/abuzafar-dev/my-market) — POS, inventory and credit ledger for small shops
 
@@ -30,6 +30,20 @@ A multi-tenant point-of-sale system that replaces the paper notebook in a small 
 
 `Django 6` `DRF` `PostgreSQL` `JWT` `Vue 3` `Docker Compose` `GitHub Actions`
 236 automated tests, including 34 security tests, run in CI on every push.
+
+---
+
+#### [ZUNO](https://github.com/abuzafar-dev/zuno) — Affiliate cash-on-delivery storefront · [project page](https://abuzafar-dev.github.io/zuno/)
+
+An online store where partners sell through personal links and earn commission on every delivered order.
+
+- **Money ledger:** every balance change is journaled, and a database constraint blocks double commission
+- **Stock under concurrency:** row locks reserve items, so the last unit sells once (covered by parallel tests)
+- **Order state machine:** stock returns and commission reversals are tied to status transitions
+- **Three interfaces:** customer storefront with no-account checkout, partner cabinet, call-centre panel
+
+`Django 6` `PostgreSQL 18` `Redis` `Docker` `GitHub Actions`
+59 automated tests run against PostgreSQL in CI on every push.
 
 ---
 
